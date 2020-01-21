@@ -10,16 +10,18 @@ h1{
     background-color: #ddd;
 }
 
+.mainpage{
+    display: flex;
+    justify-content: center;
+}
 
 .topic {
-    display: inline-block;
     width: 250px;
     height: 250px;
     padding: 10px;
     background-color: #feffef;
     border-radius: 5px;
     line-height: 1.6em;
-    float:left;
     margin: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
