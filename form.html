@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		th{
+			text-align: left;
+		}
+		td:nth-child(1){
+			text-align: right;
+		}
+	</style>
+	<title>Form</title>
+</head>
+<body>
+<center>	
+
+<table>
+<th colspan="2"><h1>Registration Form</h1></th>
+<form method="get">
+	<tr>
+		<td>User ID:</td>
+		<td>
+			<input type="text" name="uid" minlength="5" maxlength="12" placeholder="Required and must be of length 5 to 12" required>
+		</td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td>
+			<input type="password" name="pass" minlength="7" maxlength="12" placeholder="Required and must be of length 7 to 12" required>
+		</td>
+	</tr>
+	<tr>
+		<td>Name:</td>
+		<td>
+			<input type="text" name="name"  placeholder="Required and alphabets only" required>
+		</td>
+	</tr>
+	<tr>
+		<td>Address:</td>
+		<td>
+			<input type="text" name="add" placeholder="Optional">
+		</td>
+	</tr>
+	<tr>
+		<td>Country:</td>
+		<td>
+			<select name="Country" required>
+				<option value="" disabled selected>(Please select a country)</option>
+				<option value="India">India</option>
+				<option value="USA">USA</option>
+				<option value="UAE">UAE</option>
+				<option value="Japan">Japan</option>
+			</select>
+		</td>
+	</tr>
+    <tr>
+    	<td>ZIP Code:</td>
+		<td>
+			<input type="number" name="zip" placeholder="Required. Must be numeric only." required>
+		</td>
+	</tr>	
+	<tr>
+		<td>Email:</td>
+		<td>
+			<input type="email" name="email" placeholder="Required and must be valid email" required>
+		</td>
+	</tr>
+	<tr>
+		<td>Sex:</td>
+		<td>
+			<input type="radio" name="sex" value="Male">Male
+				<input type="radio" name="sex" value="Female">Female
+		</td>
+	</tr>
+	<tr>
+		<td>Language:</td>
+		<td>
+			<input type="checkbox" name="lang" value="English">English
+					 <input type="checkbox" name="lang" value="Non English">Non English
+					 
+		</td>
+	</tr>
+	<tr>
+		<td>About:</td>
+		<td>
+			<textarea name="abt" rows="10" cols="50"></textarea>
+		</td>
+	</tr>	
+	<tr>
+	<td colspan="2"><center><input type="submit" name="submit" value="Submit"></center></td>
+	</tr>					
+</form>
+</table>
+</center>
+</body>
+</html>
